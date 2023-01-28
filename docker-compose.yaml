@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  books_backend:
+    build: books_backend/.
+    ports:
+      - "3000:3000"
+  books_frontend:
+    build: books_frontend/.
+    ports:
+      - "9091:80"
